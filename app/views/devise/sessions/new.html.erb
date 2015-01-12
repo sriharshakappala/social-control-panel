@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="login-container">
+    <div class="page-header text-left">
+      <h1><small>Sign in</small></h1>
+    </div>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "form-horizontal") do |f| %>
+      <div class="form-group">
+        <i class="fa fa-envelope-o"></i>
+        <%= f.label :email, class: "control-label" %><br />
+        <%= f.email_field :email, autofocus: true , class: "form-control"%>
+      </div>
+
+      <div class="form-group">
+        <i class="fa fa-asterisk"></i>
+        <%= f.label :password, class: "control-label" %><br />
+        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+      </div>
+
+      <% if devise_mapping.rememberable? -%>
+        <div class="form-group">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end -%>
+
+      <div class="form-group">
+        <%= f.submit "Sign in", class: "btn btn-warning" %>
+      </div>
+    <% end %>
+    
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

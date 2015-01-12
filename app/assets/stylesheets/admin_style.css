@@ -1,0 +1,35 @@
+a, a:link, a:visited {
+    text-decoration: none;
+}
+
+#title_bar{
+	box-shadow: none;
+	background: none;
+	border-width: 0px;
+	display: none;
+}
+form input[type="submit"], form input[type="button"], form button {
+	border-radius: 0px;
+	background: repeat scroll 0 0 #669999;
+	text-shadow: none;
+	color: #ffffff;
+	box-shadow: none;
+	height: 40px;
+	background-color: rgb(255, 199, 14);
+	border-color: rgb(255, 199, 14);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+form input[type="submit"]:hover:not(.disabled), form input[type="button"]:hover:not(.disabled), form button:hover:not(.disabled) {
+    background: repeat scroll 0 0 rgb(255, 199, 14);
+}
+
+.download_links {
+    display: none;
+}
+#footer {
+	display: none;
+}
+.pagination_information{
+	display: none;
+}

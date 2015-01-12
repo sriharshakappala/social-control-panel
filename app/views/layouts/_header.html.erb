@@ -1,0 +1,76 @@
+	<nav class="navbar navbar-default navbar-static main_nav">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">
+					BEE
+				</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav navbar-right">
+					<li class=""><a href="#"><i class="fa fa-bar-chart-o"></i> Dashboard</a></li>
+					<li class="<%= request.fullpath.include?("calendars") == true ? 'active' : '' %>"><a href="/calendars"><i class="fa fa-calendar"></i> Calendar</a></li>
+					<li class="<%= request.fullpath.include?("admin") == true ? 'active' : '' %>"><a href="/admin"><i class="fa fa-male"></i> User</a></li>
+					<li class="<%= (request.fullpath.include?("users/edit") && action_name=="edit") == true ? 'active' : '' %>"><a href="/users/edit"><i class="fa fa-cog"></i> Settings</a></li>
+					<li><%= link_to "<i class='fa fa-power-off'></i> Logout".html_safe, destroy_user_session_path, method: :delete %></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<nav class="navbar navbar-default subnav" id="subnav">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand"></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-sub">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-sub">
+			<ul class="nav navbar-nav navbar-left">
+				<li class="<%= request.fullpath.include?("leads") == true ? 'active' : '' %>"><%= link_to "<i class='fa fa-users'></i> Leads".html_safe, leads_path %></li>
+				<li class="<%= request.fullpath.include?("accounts") == true ? 'active' : '' %>"><a href="/accounts"><i class="fa fa-list-ul"></i> Account</a></li>
+				<li class="<%= request.fullpath.include?("potentials") == true ? 'active' : '' %>"><a href="/potentials"><i class="fa fa-briefcase"></i> Potentials</a></li>
+				<li class="<%= request.fullpath.include?("campaigns") == true ? 'active' : '' %>"><a href="/campaigns"><i class="fa fa-volume-up"></i> Campaigns</a></li>
+				<li class="<%= request.fullpath.include?("vendors") == true ? 'active' : '' %>"><a href="/vendors"><i class="fa fa-truck"></i> Vendors</a></li>
+				<li class="<%= request.fullpath.include?("contacts") == true ? 'active' : '' %>"><a href="/contacts"><i class="fa fa-user"></i> Contacts</a></li>
+				<li class="dropdown <%= (request.fullpath.include?("tasks") || request.fullpath.include?("events") || request.fullpath.include?("phone_calls")) == true ? 'active' : '' %>">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class=" fa fa-bell-o"></i> Activities <b class="caret"></b></a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="/tasks"><i class=" fa fa-tasks"></i> Tasks</a></li>
+	                    <li><a href="/events"><i class="fa fa-bullhorn"></i> Events</a></li>
+	                    <li><a href="/phone_calls"><i class="fa fa-phone"></i>  Phone Calls</a></li>
+	                    <li><a href="/appointments"><i class="fa fa-clock-o"></i>  Appointments</a></li>
+	                </ul>
+                </li>
+                <li class="dropdown <%= (request.fullpath.include?("products") || request.fullpath.include?("cases") || request.fullpath.include?("solutions")) == true ? 'active' : '' %>">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class=" fa fa-wrench"></i> Products & More <b class="caret"></b></a>
+	                <ul class="dropdown-menu">
+	                	<li><a href="/products"><i class="fa fa-wrench"></i> Products</a></li>
+	                    <li><a href="/cases"><i class=" fa fa-search"></i> Cases</a></li>
+	                    <li><a href="/solutions"><i class="fa fa-comment"></i> Solutions</a></li>
+	                </ul>
+                </li>
+               	<li class="dropdown <%= (request.fullpath.include?("purchase_orders") || request.fullpath.include?("invoices") || request.fullpath.include?("sales_orders")) == true ? 'active' : '' %>">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class=" fa fa-files-o"></i> Orders & Invoices <b class="caret"></b></a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="/purchase_orders"><i class=" fa fa-hand-o-left"></i> Purchase Orders</a></li>
+	                    <li><a href="/sales_orders"><i class="fa fa-hand-o-right"></i> Sales Orders</a></li>
+	                    <li><a href="/invoices"><i class="fa fa-inr"></i> Invoices </a></li>
+	                </ul>
+                </li>
+                <li class="dropdown <%= (request.fullpath.include?("price_books") || request.fullpath.include?("quotes")) == true ? 'active' : '' %>">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class=" fa fa-folder-open-o"></i> Quotes & More <b class="caret"></b></a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="/quotes"><i class=" fa fa-pencil-square-o"></i> Quotes</a></li>
+	                    <li><a href="/price_books"><i class="fa fa-book"></i> Price Books</a></li>
+	                </ul>
+                </li>
+            </ul>
+		</div>
+	</nav>

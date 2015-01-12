@@ -1,0 +1,132 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+/*========== Header Section ==========*/
+.header{
+	background: url(/assets/photography.png) repeat center top;
+	background-attachment: fixed;
+	background-position: center;
+	min-height: 700px;
+	width: 100%;
+	text-align: center;
+	margin-top: 44px;
+	padding-top:20px;
+
+	/*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+}
+
+.header h1 {
+	margin-top: 50px;
+	font-size: 50px;
+	font-weight: 700;
+	color: #000000;
+	margin-left: 10px;
+}
+
+.header h3 {
+	color: #000000;
+	font-size: 25px;
+	font-weight: 100;
+}
+
+.counter_back{
+	background-color: rgb(255,199,14);
+	min-height: 500px;
+	width: 100%;
+	margin-top: -70px;
+	padding-top:20px;
+}
+
+.feature_back{
+	background: url(/assets/photography.png) repeat center top;
+	background-color: white;
+	min-height: 400px;
+	width: 100%;
+	margin-top: -70px;
+	padding-top:20px;
+}
+
+.content_back{
+	background-color: rgb(255,199,14);
+	min-height: 200px;
+	width: 100%;
+	margin-top: -70px;
+	padding-top:20px;
+}
+.navbar-default{
+	background-color: rgb(255,199,14);
+	border: rgb(255,199,14);
+}
+
+.navbar-default .navbar-brand {
+	color: #000000;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #000000;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: transparent;
+    color: black
+}
+
+.fa-stack-2x{
+	color: rgb(255,199,14);
+}
+
+.fa-stack-1x{
+	color: #000000;
+}
+.justify
+{
+	text-align: justify;
+	margin: 10px;
+}
+
+a {
+	color: rgb(0,0,0);
+}
+
+a:hover, a:focus {
+	color: black;
+}
+
+footer {
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#efefef;
+}
+
+h1 small{
+	color: #000000;
+}
+
+.page-header{
+	border-bottom: 1px solid rgb(255,199,14);
+}
+
+.navbar-btn.btn-xs {
+    margin-top: 8.5px;
+    margin-bottom: 9.5px;
+}
+.navbar .btn {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/*.navbar-default .navbar-nav > li > a:hover {
+    background-color: #;
+    color: #000;
+}*/

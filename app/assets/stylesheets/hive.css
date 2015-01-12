@@ -1,0 +1,142 @@
+body{
+    background-image: url("/assets/imghive/geometry.png");
+    background-repeat: repeat;
+    background-position: fixed;
+}
+/* ==== Overridding Bootstrap ==== */
+.main_nav {
+    border-radius: 0;
+    background-color: rgb(255,199,14);
+    border-color: rgb(255,199,14);
+    color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default {
+    margin-bottom: 20px;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+.btn-warning {
+    background-color: rgb(255,199,14);
+    border-color: rgb(255,199,14);
+    color: #000000;
+    font-weight: bold;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning.focus, .btn-warning:active, .btn-warning.active, .open > .dropdown-toggle.btn-warning {
+    background-color: rgb(255,199,14);
+    border-color: rgb(255,199,14);
+    color: #000000;
+}
+
+.btn-primary {
+    background-color: #EFEFEF;
+    border-color: #EFEFEF;
+    color: #000000;
+    font-weight: bold;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background-color: #EFEFEF;
+    border-color: #EFEFEF;
+    color: #000000;
+}
+
+li a:active {
+    border-color: #000000;
+    border-bottom: 10px;
+}
+
+.input-group {
+    min-height: 20px;
+}
+
+footer {
+    background-color: #EFEFEF;
+    margin-top: 50px;
+    padding-bottom: 46px;
+    padding-right: 25px;
+    padding-top: 20px;
+}
+
+.page-header {
+    border-bottom: 1px solid #DDDDDD;
+    margin: -15px 0 21px;
+    padding-bottom: 9.5px;
+}
+
+.table-hover > tbody > tr.warning:hover > th {
+    background-color: rgb(255,199,14);
+}
+
+/* ========== Landing Page ========== */
+.background {
+    margin-top: 250px;
+}
+.soon {
+    margin-top: 22px;
+    margin-left: 288px;
+}
+
+/* ========== Header Styling ========= */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 5px solid #000000;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #000000;
+}
+
+#subnav{
+    margin-top: -20px;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* =========== Login Style ============ */
+
+.login-container{
+    position: relative;
+    width: 400px;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    background: #fff;
+    border: 1px solid rgb(255,199,14);
+}
+
+/* ========== Signup Styles ============ */
+.signup-container{
+    position: relative;
+    width: 400px;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    background: #fff;
+    border: 1px solid rgb(255,199,14);
+}
+
+
+/* =========== Error Message ========== */
+.error-message{
+    color: red;
+}
+
+
+/* ========== Full Calendar Style ========== */
+.fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed hr, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
+    border-color: rgb(225, 214, 14);
+}

@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row">
+		<div class="page-header">
+			<h1><small>Cancel my account</small></h1>
+		</div>
+		<div>
+			<p>Unhappy?
+				<%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-warning" %>
+			</p>
+		</div>
+	</div>
+</div>

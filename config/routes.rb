@@ -14,16 +14,6 @@ Rails.application.routes.draw do
   	end
   end
 
-  resources :facebook do
-  	collection do
-  		get 'recent_posts'
-  		get 'friends'
-  		get 'groups'
-  		get 'invites'
-  		get 'birthdays'
-  	end
-  end
-
   resources :services do
     collection do
       get 'configure'

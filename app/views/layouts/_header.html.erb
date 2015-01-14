@@ -15,15 +15,22 @@
 					<li class="<%= request.fullpath.include?("dashboard") == true ? 'active' : '' %>">
 						<a href="/dashboards"><i class="fa fa-bar-chart-o"></i> Dashboard</a>
 					</li>
-					<li class="<%#= request.fullpath.include?("calendars") == true ? 'active' : '' %>"><a href="/calendars"><i class="fa fa-calendar"></i> Calendar</a></li>
+					<li>
+						<a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+					</li>
 					<li class="<%= request.fullpath.include?("twitter") == true ? 'active' : ''  %>">
 						<a href="/twitter/tweets"><i class="fa fa-twitter"></i> Twitter</a>
 					</li>
-					<li class="<%= request.fullpath.include?("facebook") == true ? 'active' : ''  %>">
-						<a href="/facebook/recent_posts"><i class="fa fa-facebook"></i> Facebook</a>
+					<li>
+						<a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
 					</li>
 					<li class="<%= (request.fullpath.include?("users/edit") && action_name=="edit") == true ? 'active' : '' %>"><a href="/users/edit"><i class="fa fa-cog"></i> Settings</a></li>
-					<li class="<%= (request.fullpath.include?("users/edit") && action_name=="edit") == true ? 'active' : '' %>"><a href="/users/edit"><i class="fa fa-cogs"></i> Configure Services</a></li>
+					<li class="<%= request.fullpath.include?("services") == true ? 'active' : '' %>">
+						<a href="/services/configure"><i class="fa fa-cogs"></i> Configure Services</a>
+					</li>
 					<li><%= link_to "<i class='fa fa-power-off'></i> Logout".html_safe, destroy_user_session_path, method: :delete %></li>
 				</ul>
 			</div>

@@ -2,8 +2,8 @@
   <div class="row">
     <ul class="nav nav-tabs nav-right">
       <li class="active"><a href="#twitter" data-toggle="tab"><i class="fa fa-twitter"></i> Twitter</a></li>
-      <li class=""><a href="#account" data-toggle="tab"><i class="fa fa-facebook"></i> Facebook</a></li>
-      <li class=""><a href="#account" data-toggle="tab"><i class="fa fa-facebook"></i> LinkedIn</a></li>
+      <li class=""><a href="#facebook" data-toggle="tab"><i class="fa fa-facebook"></i> Facebook</a></li>
+      <li class=""><a href="#linkedin" data-toggle="tab"><i class="fa fa-facebook"></i> LinkedIn</a></li>
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane fade active in" id="twitter">
@@ -12,38 +12,29 @@
             <div class="page-header">
               <h2><small>Configure Twitter</small></h2>
             </div>
-            <%= form_tag '/services/configure', :method => :post %>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <%= f.label :consumer_key, class: "control-label" %><br />
-                  <%= f.text_field :consumer_key, autofocus: true, class: "form-control" %>
-                </div>
-
-                <div class="form-group">
-                  <%= f.label :consumer_secret, class: "control-label" %><br />
-                  <%= f.text_field :consumer_secret, class: "form-control" %>
-                </div>
-
-                <div class="form-group">
-                  <%= f.label :access_token, class: "control-label" %><br />
-                  <%= f.text_field :access_token, class: "form-control" %>
-                </div>
-
-                <div class="form-group">
-                  <%= f.label :access_token_secret, class: "control-label" %><br />
-                  <%= f.text_field :access_token_secret, class: "form-control" %>
-                </div>
-
-                <div class="form-group">
-                  <%= f.submit "Save Crendentials", class: "btn btn-warning" %>
-                </div>
-              </div>
-            <% end %>
+            Coming Soon
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="account">
-        <%= render "cancel_account" %>
+      <div class="tab-pane fade" id="facebook">
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="page-header">
+              <h2><small>Configure Facebook</small></h2>
+            </div>
+            Coming Soon
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="linkedin">
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="page-header">
+              <h2><small>Configure LinkedIn</small></h2>
+            </div>
+            Coming Soon
+          </div>
+        </div>
       </div>
     </div>
   </div>

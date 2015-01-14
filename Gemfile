@@ -42,3 +42,5 @@ gem 'devise'
 gem 'pry'
 gem 'rspec-rails'
 gem 'twitter'
+gem 'omniauth-twitter'
+gem 'rails_12factor', group: :production

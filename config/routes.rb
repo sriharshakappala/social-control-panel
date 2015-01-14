@@ -24,5 +24,11 @@ Rails.application.routes.draw do
   	end
   end
 
-  root 'dashboards#index'
+  resources :services do
+    collection do
+      get 'configure'
+    end
+  end
+
+  root 'twitter#tweets'
 end

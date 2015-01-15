@@ -16,13 +16,12 @@ class TwitterController < ApplicationController
 		redirect_to tweets_twitter_index_path
 	end
 
-	def tweets_and_replies
-	end
-
 	def followers
+		@followers = @client.followers
 	end
 
 	def following
+		@following = @client.following
 	end
 
 	def graphs

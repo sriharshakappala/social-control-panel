@@ -12,13 +12,19 @@
 		<div class="col-lg-offset-1 col-lg-10">
 		</div>
 	</div>
-	<% @following.each do |f| %>
-		<div class="row">
-			<div class="col-lg-offset-1 col-lg-5">
-					<%= f.name %>					
-			</div>
-			<div class="col-lg-5">
-				<%= image_tag f.profile_image_url %>
+	<div class="row">
+		<div class="col-lg-offset-1 col-lg-10">
+			<table class="table table-striped table-hover">
+				<% @following.each do |f| %>
+					<tr>
+						<td></td>
+						<td><%= image_tag f.profile_image_url %></td>
+						<td><%= f.name %></td>
+						<td><%= f.description %></td>
+						<td><a href="#" class="btn btn-danger btn-xs table-actions"><i class="fa fa-minus-circle"></i></a></td>
+					</tr>
+				<% end %>
+			</table>
 		</div>
-	<% end %>
+	</div>
 </div>

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :twitter do
   	collection do
   		get 'tweets'
+      post 'post_tweet'
   		get 'tweets_and_replies'
   		get 'followers'
   		get 'following'

@@ -49,33 +49,18 @@
 			</div>
 			<div class="navbar-collapse collapse" id="navbar-sub">
 				<ul class="nav navbar-nav navbar-left">
-					<li class="active"><a href="/accounts"><i class="fa fa-clock-o"></i> Timeline</a></li>
-					<li class="<%#= request.fullpath.include?("accounts") == true ? 'active' : '' %>"><a href="/accounts"><i class="fa fa-reply-all"></i> Tweets and Replies</a></li>
-					<li class="<%#= request.fullpath.include?("potentials") == true ? 'active' : '' %>"><a href="/potentials"><i class="fa fa-users"></i> Followers</a></li>
-					<li class="<%#= request.fullpath.include?("campaigns") == true ? 'active' : '' %>"><a href="/campaigns"><i class="fa fa-user"></i> Following</a></li>
-					<li class="<%#= request.fullpath.include?("accounts") == true ? 'active' : '' %>"><a href="/accounts"><i class="fa fa-line-chart"></i> Graphs</a></li>
-	      </ul>
-			</div>
-		</nav>
-	<% end %>
-
-	<% if request.fullpath.include?("facebook") %>
-		<nav class="navbar navbar-default subnav" id="subnav">
-			<div class="navbar-header">
-				<a href="#" class="navbar-brand"></a>
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-sub">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="navbar-collapse collapse" id="navbar-sub">
-				<ul class="nav navbar-nav navbar-left">
-					<li class="active"><a href="/accounts"><i class="fa fa-list-ul"></i> Recent Posts</a></li>
-					<li class="<%#= request.fullpath.include?("accounts") == true ? 'active' : '' %>"><a href="/accounts"><i class="fa fa-list-ul"></i> Friends</a></li>
-					<li class="<%#= request.fullpath.include?("potentials") == true ? 'active' : '' %>"><a href="/potentials"><i class="fa fa-briefcase"></i> Groups</a></li>
-					<li class="<%#= request.fullpath.include?("campaigns") == true ? 'active' : '' %>"><a href="/campaigns"><i class="fa fa-volume-up"></i> Invites</a></li>
-					<li class="<%#= request.fullpath.include?("accounts") == true ? 'active' : '' %>"><a href="/accounts"><i class="fa fa-list-ul"></i> Birthdays</a></li>
+					<li class="<%= request.fullpath.include?("tweets") == true ? 'active' : ''  %>">
+						<a href="/twitter/tweets"><i class="fa fa-clock-o"></i> Timeline</a>
+					</li>
+					<li class="<%= request.fullpath.include?("followers") == true ? 'active' : ''  %>">
+						<a href="/twitter/followers"><i class="fa fa-users"></i> Followers</a>
+					</li>
+					<li class="<%= request.fullpath.include?("following") == true ? 'active' : ''  %>">
+						<a href="/twitter/following"><i class="fa fa-user"></i> Following</a>
+					</li>
+					<li class="<%= request.fullpath.include?("graphs") == true ? 'active' : ''  %>">
+						<a href="/twitter/graphs"><i class="fa fa-line-chart"></i> Graphs</a>
+					</li>
 	      </ul>
 			</div>
 		</nav>

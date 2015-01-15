@@ -1,0 +1,23 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="page-header">
+				<h1>
+					<small><i class="fa fa-users"></i> Followers</small>
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-offset-1 col-lg-10">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-offset-1 col-lg-10">
+			<% @followers.each do |follower| %>
+				<%= follower.name %>
+				<%= image_tag follower.profile_image_url %>
+			<% end %>
+		</div>
+	</div>
+</div>

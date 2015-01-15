@@ -6,6 +6,10 @@ class TwitterController < ApplicationController
 		@tweets = @client.user_timeline
 	end
 
+	def feed
+		@tweets = @client.home_timeline
+	end
+
 	def post_tweet
 		begin
 			@client.update!(params[:tweet])

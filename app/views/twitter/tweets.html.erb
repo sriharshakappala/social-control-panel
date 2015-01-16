@@ -37,9 +37,8 @@
 						<td></td>
 						<td><%= tweet.text %></td>
 						<td>
-							<%#= link_to content_tag(:i,nil, class: 'fa fa-pencil'), edit_lead_path(lead), class: "btn btn-success btn-xs table-actions" %>
-							<%#= link_to content_tag(:i,nil, class: 'fa fa-trash'), lead, class: "btn btn-danger btn-xs table-actions", method: :delete %>
-						</td>
+							<a href="#" class="btn btn-info btn-xs table-actions"><i class="fa fa-reply"></i></a>
+							<a href="#" class="btn btn-info btn-xs table-actions"><i class="fa fa-retweet"></i></a>
 					</tr>
 				<% end %>
 			</table>

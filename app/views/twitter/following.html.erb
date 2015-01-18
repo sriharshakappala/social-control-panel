@@ -21,7 +21,9 @@
 						<td><%= image_tag f.profile_image_url %></td>
 						<td><%= f.name %></td>
 						<td><%= f.description %></td>
-						<td><a href="#" class="btn btn-danger btn-xs table-actions"><i class="fa fa-minus-circle"></i></a></td>
+						<td>
+							<%= link_to content_tag(:i,nil, class: 'fa fa-minus-circle'), block_twitter_index_path(user_id: f.id, task: "following"),class: "btn btn-danger btn-xs table-actions" %>
+						</td>
 					</tr>
 				<% end %>
 			</table>

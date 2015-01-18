@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   		get 'following'
   		get 'graphs'
       get 'trends'
+      get 'block'
   	end
   end
 

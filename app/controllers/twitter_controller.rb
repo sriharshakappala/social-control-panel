@@ -36,6 +36,16 @@ class TwitterController < ApplicationController
 	def retweet
 	end
 
+	def block
+		@client.block @client.user params[:user_id].to_i
+		flash[:notice] = "User block successfully"
+		if params[:task] = "following"
+			redirect_to following_twitter_index_path
+		else
+			redirect_to followers_twitter_index_path
+		end
+	end
+
 	def trends
 		@trends = @client.trends
 	end

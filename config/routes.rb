@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   		get 'graphs'
       get 'trends'
       get 'block'
+      get 'retweet'
   	end
   end
 

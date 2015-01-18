@@ -29,6 +29,8 @@ class TwitterController < ApplicationController
 	end
 
 	def graphs
+		@tweets = @client.user_timeline.count
+		@retweets = @client.retweeted_by_me.count
 	end
 
 end

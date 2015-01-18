@@ -33,4 +33,11 @@ class TwitterController < ApplicationController
 		@retweets = @client.retweeted_by_me.count
 	end
 
+	def retweet
+	end
+
+	def trends
+		@trends = @client.trends
+	end
+
 end

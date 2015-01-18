@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   		get 'followers'
   		get 'following'
   		get 'graphs'
+      get 'trends'
   	end
   end
 

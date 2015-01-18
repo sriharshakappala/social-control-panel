@@ -22,7 +22,7 @@
 						<td><%= f.name %></td>
 						<td><%= f.description %></td>
 						<td>
-							<%= link_to content_tag(:i,nil, class: 'fa fa-minus-circle'), block_twitter_index_path(user_id: f.id,  task: "followers"),class: "btn btn-danger btn-xs table-actions" %>
+							<%= link_to content_tag(:i,nil, class: 'fa fa-minus-circle'), block_twitter_index_path(user_id: f.id),class: "btn btn-danger btn-xs table-actions" %>
 						</td>
 					</tr>
 				<% end %>
